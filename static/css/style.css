@@ -1,0 +1,182 @@
+
+/* Centering the content with subtle padding */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f4f7f6;
+}
+
+/* Styling the entry form */
+.buttons, .message-box {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  width: 100%;
+}
+
+.buttons h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.buttons input[type="text"], .inputs input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.join button, .create-btn, #send-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.join button{
+  margin-left: 285px;
+ 
+}
+
+.join button:hover, .create-btn:hover, #send-btn:hover {
+  background-color: #45a049;
+}
+
+/* Styling the chat room */
+.message-box {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 60vw;
+}
+
+.messages {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.text {
+  padding: 5px 10px;
+  margin: 5px 0;
+  background: #e9f5f2;
+  border-radius: 6px;
+}
+
+.text span {
+  display: block;
+}
+
+.muted {
+  font-size: 0.8em;
+  color: gray;
+  text-align: right;
+  margin-top: 5px;
+}
+
+/* Styling message input area */
+.inputs {
+  display: flex;
+  padding: 10px;
+  background: #f7f8fa;
+  border-top: 1px solid #ddd;
+}
+
+#message {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Previous styles remain the same until the message-box styling */
+
+.message-box {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 60vw;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.messages {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  padding: 12px;
+  margin: 5px 0;
+  border-radius: 12px;
+  max-width: 70%;
+  word-wrap: break-word;
+}
+
+.text span {
+  display: block;
+}
+
+.muted {
+  font-size: 0.8em;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Message styling for sender and receiver */
+.sent {
+  background: #DCF8C6;
+  align-self: flex-end;
+  text-align: right;
+  border-bottom-right-radius: 4px;
+  margin-left: auto;
+}
+
+.received {
+  background: #E8E8E8;
+  align-self: flex-start;
+  text-align: left;
+  border-bottom-left-radius: 4px;
+  margin-right: auto;
+}
+
+/* Input area styling */
+.inputs {
+  display: flex;
+  padding: 10px;
+  background: #f7f8fa;
+  border-top: 1px solid #ddd;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#message {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+}
+
+#message:focus {
+  border-color: #4CAF50;
+}
+
+#send-btn {
+  padding: 8px 20px;
+  border-radius: 20px;
+}
